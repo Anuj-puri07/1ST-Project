@@ -1,16 +1,19 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-function Card() {
+function Card({haha}) {
   return (
-    <div><div class="bg-white rounded-md shadow-md overflow-hidden p-4 max-w-sm">
-    <img class="w-full" src="https://tailwindflex.com/public/images/profile/118.png?ver=1" alt="Info card image"  />
-    <div class="px-6 py-4">
-        <h2 class="text-lg font-bold leading-tight text-gray-900">
-            Info Card Title</h2>
-        <p class="mt-2 text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua.</p>
+    <Link to={'/single-page/' + haha.id} >
+      <div><div className="bg-white rounded-md shadow-md overflow-hidden p-4 max-w-sm">
+    <img className="w-full" src={haha.thumbnail} alt="Info card image"  />
+    <div className="px-6 py-4">
+        <h2 className="text-lg font-bold leading-tight text-gray-900">
+            {haha.title} </h2>
+        <p className="mt-2 text-gray-600">{haha.description}</p>
     </div>
 </div></div>
+    </Link>
+    
   )
 }
 

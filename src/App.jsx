@@ -6,6 +6,7 @@ import CreatePage from './pages/CreatePage'
 import EditPage from './pages/EditPage'
 import Home from './pages/Home'
 import Nav from './components/Nav'
+import Landing from './components/Landing'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -15,9 +16,10 @@ function App() {
     <Routes>
       <Route path='/nav' element={<Nav />} />
       <Route path='/' element={<Home />} />
-      <Route path='/single-page' element={<SInglePage /> } />
+      <Route path='/single-page/:id' element={<SInglePage /> } />
       <Route path='/create-page' element={<CreatePage />} />
       <Route path='/edit-page' element={<EditPage />} />
+      <Route path='/landing-page' element={<Landing />} />
         </Routes>
         </BrowserRouter>
   )

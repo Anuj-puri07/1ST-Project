@@ -1,9 +1,15 @@
 import React from 'react'
+import Nav from '../components/Nav'
+import Form from '../components/Form'
+import Footer from '../components/Footer'
 
 function EditPage() {
   return (
-    <h1>This is Edit paage</h1>
-  )
-}
+    <>
+    <Nav />
+    <Form hehe="Edit" text="Edit page"/>
+    <Footer />
+    </>
+)}
 
 export default EditPage

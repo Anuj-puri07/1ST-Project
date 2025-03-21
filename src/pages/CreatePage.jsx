@@ -1,8 +1,15 @@
 import React from 'react'
+import Nav from '../components/Nav'
+import Footer from '../components/Footer'
+import Form from '../components/Form'
 
 function CreatePage() {
   return (
-    <h1>This is create paage</h1>
+    <>
+    <Nav />
+  <Form  hehe="Create" text="Create Page"/>
+    <Footer />
+    </>
   )
 }
 
